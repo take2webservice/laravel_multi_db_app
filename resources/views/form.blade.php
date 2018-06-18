@@ -62,6 +62,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+            label {
+                font-size:12px;
+            }
         </style>
     </head>
     <body>
@@ -70,7 +74,18 @@
                 <div class="title m-b-md">
                     Input value and submit!!
                     {{Form::open(['url' => '/submit'])}}
+                        <div>
+                        {{ Form::label('value', 'デフォルトDB') }}
                         {{Form::text('value')}}
+                        </div>
+                        <div>
+                        {{ Form::label('docker1', 'dockr1') }}
+                        {{Form::text('docker1')}}
+                        </div>
+                        <div>
+                        {{ Form::label('docker2', 'dockr2') }}
+                        {{Form::text('docker2')}}
+                        </div>
                         {{Form::submit()}}
                     {{Form::close()}}
                 </div>

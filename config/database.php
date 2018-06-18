@@ -53,6 +53,37 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+        
+        'docker1' => [
+            'driver' => 'mysql',
+            'host' => env('DOCKER1_DB_HOST', '127.0.0.1'),
+            'port' => env('DOCKER1_DB_PORT', '3306'),
+            'database' => env('DOCKER1_DB_DATABASE', 'forge'),
+            'username' => env('DOCKER1_DB_USERNAME', 'forge'),
+            'password' => env('DOCKER1_DB_PASSWORD', ''),
+            'unix_socket' => env('DOCKER1_DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        'docker2' => [
+            'driver' => 'mysql',
+            'host' => env('DOCKER2_DB_HOST', '127.0.0.1'),
+            'port' => env('DOCKER2_DB_PORT', '3306'),
+            'database' => env('DOCKER2_DB_DATABASE', 'forge'),
+            'username' => env('DOCKER2_DB_USERNAME', 'forge'),
+            'password' => env('DOCKER2_DB_PASSWORD', ''),
+            'unix_socket' => env('DOCKER2_DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
 
         'pgsql' => [
             'driver' => 'pgsql',

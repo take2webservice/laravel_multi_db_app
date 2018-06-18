@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/list', 'SubmitController@list');
+Route::get('/list/docker1', 'SubmitController@list_docker1');
+Route::get('/list/docker2', 'SubmitController@list_docker2');
 Route::post('/submit', 'SubmitController@post');
 
